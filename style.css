@@ -94,6 +94,69 @@ list-style: none;
 .services ul li:before{
 content: '✓';
 }
+.row-fac {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 50px;
+grid-auto-rows: minmax(300px, auto);
+padding: 20px 0;
+}
+.col-cover {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.row-fac img {
+width: 100%;
+height: auto;
+}
+
+
+@media only screen and (max-width:800px) {
+.row-fac {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 50px;
+grid-auto-rows: minmax(200px, auto);
+padding: 20px 0;
+
+}
+
+.row-fac img {
+width: 100%;
+height: auto;
+}
+}
+/*FAQS*/
+.faqHeader {
+font-size: 27px;
+margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+font-family: 'Glyphicons Halflings';
+content: "e072"; /* "play" icon */
+float: right;
+color: #F58723;
+font-size: 18px;
+line-height: 22px;
+/* rotate "play" icon from > (right arrow) to down arrow */
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+/* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+color: #454444;
+}
 
 /*all h5*/
 h5{
