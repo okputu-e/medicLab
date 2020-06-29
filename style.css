@@ -11,7 +11,6 @@ position: absolute;
 height: 901px;
 z-index: -1;
 filter: brightness(50%);
-margin-bottom:200px;
 }
 #nav{
 z-index: 1;
@@ -128,9 +127,23 @@ height: auto;
 }
 }
 /*FAQS*/
+.enquiry_section{
+margin-top: 60px;
+margin-bottom: 40px;
+}
 .faqHeader {
 font-size: 27px;
 margin: 20px;
+}
+.card{
+ border:1px solid #0052FF;
+ font-weight: 900;
+ margin: 15px;
+ border-radius: 8px;
+ background-color: #ffffff;
+}
+.card a:hover{
+text-decoration: none;
 }
 
 .panel-heading [data-toggle="collapse"]:after {
@@ -171,6 +184,14 @@ font-size: 22px;
 line-height: 28px;
 color: #3A3A3A;
 }
+.input_two{
+background: #0052FF;
+color: #ffffff;
+border: none;
+width: 144px;
+height: 50px;
+margin: 10px;
+}
 
 
 /*footer*/
@@ -206,7 +227,8 @@ padding-left: 150px;
 .third-division {
 min-height: 400px;
 width: 100%;
-margin: 50px 0;
+margin-bottom: 50px;
+margin-top: -150px;
 }
 
 .third-wrapper {
@@ -228,5 +250,57 @@ grid-auto-rows: minmax(300px, auto);
 grid-gap: 50px;
 }
 
+}
+.test_first_img{
+position: relative;
+top: 100px;
+filter: brightness(50%);
+height: auto;
+z-index: -1;
+}
+.testimonial_section{
+margin: 10px;
+font-family: Source Sans Pro;
+font-size: 20px;
+line-height: 25px;
+font-family: Muli;
+font-style: normal;
+position: relative;
+top: -300px;
+z-index: 1;
+color: #ffffff;
+}
 
+.testimonial_section small{
+font-style: normal;
+font-weight: 600;
+}
+.testimonial_section p{
+font-style: italic;
+font-weight: normal;
+text-align: center
+}
+.head_test{
+text-align: center;
+letter-spacing: 0.08em;
+margin-bottom: 70px;
+color: #FFFFFF;
+}
+.ellipse{
+width: 101.17px;
+height: 94.74;
+}
+.stars{
+width: 163px;
+height: 26.32px;
+}
+
+#first-btn{
+width: 197px;
+height: 50px;
+background: #0052FF;
+border: none;
+font-size: 16px;
+line-height: 20px; 
+color: #ffffff;
 }

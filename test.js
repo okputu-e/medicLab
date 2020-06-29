@@ -11,3 +11,8 @@
                 $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
                 $(this).closest('.faq').addClass('open');
             }
+
+    });
+ });
+
+

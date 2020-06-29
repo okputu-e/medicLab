@@ -20,11 +20,15 @@
    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
    <script type="text/javasript"  src="test.js"></script>
 
+   <!--animation-->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 <header class="first-division">
     
-    <img src="images\head_img.jpg" alt="doctor" class="img-fluid" id="head-image" height="901" width="1440">
+    <img src="images\head_img.jpg" alt="doctor" class="img-fluid" id="head-image" height="901" width="1440" data-aos="fade-down" data-aos-delay="50"
+    data-aos-duration="1000">
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">
@@ -217,7 +221,7 @@ health care services</p>
 <div class="" id="accordion">
 <div class="row-fac">
 <div class="col-cover">
-<div class="text-center">
+<div class="text-left">
 <div class="card ">
 <div class="card-header">
 <h4 class="card-header">
@@ -261,7 +265,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat earum nobis mo
 <div class="card ">
 <div class="card-header">
 <h4 class="card-header">
-<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do i know the righ practitioner?</a>
+<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do i know the right practitioners?</a>
 </h4>
 </div>
 <div id="collapseFour" class="panel-collapse collapse">
@@ -271,6 +275,10 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt exercitationem bl
 </div>
 </div>
 
+<form action="">
+<label for="enquiries"></label>
+<input type="button" value="Ask Questions" class="input_two">
+</form>
 </div>
 
 
@@ -353,9 +361,30 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt exercitationem bl
 </div>
 </div>
 </section>
+<div class="test_first_img">
+<img src="images\testimony.png" alt="" class="img-fluid" width="1400" height="605">
+</div> 
+<section class="testimonial_section">
+<div class="container test_details">
+<div class="row">
+<div class="col-md-12 text-center">
+<div class="display 8 testimony_text">
+<h3 class="head_test">Testimonial</h3>
+<img src="images\Ellipse 3.png" alt="" class="test_second_img">
+<p>“Joby made searching for a job easier and reduced the time framewhile eliminating the office to
+office conventional mode of application”
+</p>
+</div>
+<div class="text-center test_name">
+<img src="images\stars.png" alt="" class="stars">
+<small>  -Orlando Philip <span class="test_blue">(UI Designer)</span></small>
+</div>
+</div>
+</div>
 
-<div >
-    <img src="images\testimony.png" alt="" class="img-fluid">
+</section>
+
+
 </div>
 <div class="third-division pb-3">
 <div class="container">
@@ -380,7 +409,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt exercitationem bl
 rows="10"></textarea>
 </div>
 
-<button type="submit" class="btn btn-primary" style="background:#155A45;" id="first-btn">Book Appointment</button>
+<button type="submit" class="" id="first-btn">Book Appointment</button>
 </form>
 </div>
 </div>
@@ -469,7 +498,10 @@ width="1440">
 </section>
 
 
-
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
