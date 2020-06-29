@@ -89,7 +89,9 @@ margin-bottom: 40px;
 .services ul{
 list-style: none;
 }
-
+.contact_text{
+margin-top: 60px;
+}
 .services ul li:before{
 content: '✓';
 }
@@ -202,8 +204,8 @@ margin-top: 40px;
 }
 .foot_contact{
 font-family: 'Source Sans Pro', sans-serif;
-margin-top: 20px;
-margin-bottom: 20px;
+margin-top: 60px;
+margin-bottom: 60px;
 }
 .img_paragraph{
 font-weight: normal;
@@ -221,8 +223,21 @@ background-size: cover;
 height: 150px;
 position: relative;
 top:600px;
-padding-top: 50px;
-padding-left: 150px;
+padding-top: 40px;
+align-content: center;
+justify-content: center;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+.foot_logo{
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+}
+.copyright{
+font-size: 15px;
+line-height: 18px;
+text-transform: capitalize;
 }
 .third-division {
 min-height: 400px;
@@ -251,11 +266,12 @@ grid-gap: 50px;
 }
 
 }
+/*testimonial section*/
 .test_first_img{
 position: relative;
 top: 100px;
 filter: brightness(50%);
-height: auto;
+height: 100%;
 z-index: -1;
 }
 .testimonial_section{
