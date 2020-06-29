@@ -320,3 +320,8 @@ font-size: 16px;
 line-height: 20px; 
 color: #ffffff;
 }
+.test_blue{
+color: #0052FF;
+font-weight: 900;
+z-index: 1;
+}
