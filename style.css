@@ -1,3 +1,4 @@
+
 /*body*/
 body{
 height: auto;
@@ -11,6 +12,7 @@ position: absolute;
 height: 901px;
 z-index: -1;
 filter: brightness(50%);
+background-size: cover;
 }
 #nav{
 z-index: 1;
@@ -88,6 +90,7 @@ margin-bottom: 40px;
 }
 .services ul{
 list-style: none;
+text-align: left;
 }
 .contact_text{
 margin-top: 60px;
@@ -137,7 +140,7 @@ margin-bottom: 40px;
 font-size: 27px;
 margin: 20px;
 }
-.card{
+.enquiry_section .card{
  border:1px solid #0052FF;
  font-weight: 900;
  margin: 15px;
@@ -324,4 +327,77 @@ color: #ffffff;
 color: #0052FF;
 font-weight: 900;
 z-index: 1;
+}
+@media only screen and (max-width:500px){
+#head-image{
+height: 100vh;
+width: 100%;
+}
+.head_section{
+position: relative;
+top: 80px;
+}
+.para_one{
+font-size: 24px;
+margin-bottom: -12px;
+}
+.head_one{
+font-weight: 300;
+font-size: 50px;
+margin: -15px 0;
+}
+.para_two{
+font-size: 18px;
+}
+main{
+position: relative;
+top: 300px;
+}
+.testimonial_section{
+display: flex;
+font-size: 15px;
+line-height: 18px;
+font-style: normal;
+position: relative;
+top: -180px;
+margin-bottom: 22px;
+}
+.testimonial_section p{
+font-style: normal;
+text-align: center;
+font-weight: 300;
+}
+.testimonial_section small{
+font-style: normal;
+font-weight: 300;
+}
+.head_test{
+text-align: center;
+color: #FFFFFF;
+}
+.test_name{
+margin-top: -12px;   
+}
+.test_name span{
+font-size: 12px;
+}
+.ellipse{
+width: 50.59px;
+height: 47.37px;
+}
+.stars{
+width: 81.5px;
+height: 13.16px;
+}
+footer{
+position: relative;
+top: 300px;
+margin-top: 40px;
+}
+#foter_nav{
+position: relative;
+top: 300px;
+padding-bottom: 10px;
+}
+
 }
