@@ -1,0 +1,320 @@
+/*-- Reset --*/
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Muli',
+    sans-serif;
+}
+
+/*all*/
+#input {
+  border: none !important;
+  background: #0052FF !important;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+/*all h5*/
+h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #0052FF;
+}
+
+/*h4*/
+h4 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #3A3A3A;
+  font-weight: 600;
+}
+
+/*============= NAVIGATION =============*/
+.navbar {
+  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: .1rem;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+}
+
+.nav-item {
+  padding: .8rem;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #0052FF !important;
+}
+
+
+/*============= CAROUSEL =============*/
+.carousel-inner {
+  max-height: 40rem !important;
+}
+
+.carousel-inner img {
+  filter: brightness(50%);
+}
+
+
+/*-- Carousel Content --*/
+.carousel-caption {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.carousel-caption h3 {
+  font-size: 30px;
+  line-height: 55px;
+}
+
+/*FAQS*/
+
+
+.faq .card {
+  border: 1px solid #0052FF;
+  font-weight: 900;
+  margin: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'Glyphicons Halflings';
+  content: "e072";
+  /* "play" icon */
+  float: right;
+  color: #F58723;
+  font-size: 18px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: #454444;
+}
+
+.departments .brain {
+  border-radius: 8px;
+}
+
+.serve .card {
+  border-radius: 8px;
+}
+
+.serve img {
+  margin-left: 5px;
+}
+
+.serve ul {
+  list-style: none;
+  justify-content: start;
+  padding: 20px;
+}
+
+.serve ul li:before {
+  content: '✓';
+}
+
+
+
+/*===== FIXED =====*/
+#fixed-one {
+  background: url(/images/testimony.png) no-repeat center center;
+  display: table;
+  height: 70%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+#fixed-one p {
+  font-style: italic;
+  font-weight: normal;
+  z-index: 10 !important;
+}
+
+#fixed-one h3 {
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+#fixed-one span,
+.blue,
+.specialists p {
+  color: #0052FF;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.stars {
+  width: 163px;
+  height: 26.32px;
+}
+
+#fixed-map {
+  background: url(/images/map_two.png) no-repeat center center;
+  display: table;
+  height: 70%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+
+/*============= FOOTER =============*/
+footer {
+  background-color: #0052FF;
+  color: #ffffff;
+  width: 100%;
+  font-family: 'Montserrat',
+    sans-serif;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  padding-top: 100px;
+}
+
+.foot_logo {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.copyright {
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {}
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  .carousel-caption {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  .carousel-caption h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
