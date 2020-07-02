@@ -158,16 +158,31 @@ h4 {
   padding-bottom: 20px;
 }
 
+#fixed-one::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(24, 135, 226, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial {
+  position: relative;
+  z-index: 2 !important;
+  color: #ffffff;
+}
+
 #fixed-one p {
   font-style: italic;
   font-weight: normal;
-  z-index: 10 !important;
 }
 
 #fixed-one h3 {
   letter-spacing: 0.08em;
   margin-bottom: 40px;
-  z-index: 2;
 }
 
 #fixed-one span,
@@ -175,7 +190,6 @@ h4 {
 .specialists p {
   color: #0052FF;
   font-weight: 900;
-  z-index: 2;
 }
 
 .stars {
