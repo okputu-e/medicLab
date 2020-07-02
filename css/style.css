@@ -1,4 +1,4 @@
-/*-- Reset --*/
+/*Reset*/
 html,
 body {
   overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
   color: hsl(0, 0%, 100%) !important;
 }
 
-/*all h5*/
+/*h5*/
 h5 {
   font-weight: 600;
   font-size: 22px;
@@ -31,7 +31,7 @@ h4 {
   font-weight: 600;
 }
 
-/*============= NAVIGATION =============*/
+/*NAVIGATION*/
 .navbar {
   background: linear-gradient(to right, #f2f2f2, #FBFBFB);
   font-style: normal;
@@ -55,8 +55,7 @@ h4 {
   color: #0052FF !important;
 }
 
-
-/*============= CAROUSEL =============*/
+/*CAROUSEL*/
 .carousel-inner {
   max-height: 40rem !important;
 }
@@ -65,8 +64,6 @@ h4 {
   filter: brightness(50%);
 }
 
-
-/*-- Carousel Content --*/
 .carousel-caption {
   position: absolute;
   top: 150px;
@@ -84,8 +81,30 @@ h4 {
   line-height: 55px;
 }
 
-/*FAQS*/
+/*Departments & servies*/
+.departments .brain {
+  border-radius: 8px;
+}
 
+.serve .card {
+  border-radius: 8px;
+}
+
+.serve img {
+  margin-left: 5px;
+}
+
+.serve ul {
+  list-style: none;
+  justify-content: start;
+  padding: 20px;
+}
+
+.serve ul li:before {
+  content: '✓';
+}
+
+/*FAQS*/
 
 .faq .card {
   border: 1px solid #0052FF;
@@ -125,33 +144,9 @@ h4 {
   color: #454444;
 }
 
-.departments .brain {
-  border-radius: 8px;
-}
-
-.serve .card {
-  border-radius: 8px;
-}
-
-.serve img {
-  margin-left: 5px;
-}
-
-.serve ul {
-  list-style: none;
-  justify-content: start;
-  padding: 20px;
-}
-
-.serve ul li:before {
-  content: '✓';
-}
-
-
-
-/*===== FIXED =====*/
+/*Testimonial*/
 #fixed-one {
-  background: url(/images/testimony.png) no-repeat center center;
+  background: url('../images/testimony.png') no-repeat center center;
   display: table;
   height: 70%;
   position: relative;
@@ -189,7 +184,7 @@ h4 {
 }
 
 #fixed-map {
-  background: url(/images/map_two.png) no-repeat center center;
+  background: url('../images/map_two.png') no-repeat center center;
   display: table;
   height: 70%;
   position: relative;
@@ -197,8 +192,7 @@ h4 {
   background-size: cover;
 }
 
-
-/*============= FOOTER =============*/
+/*FOOTER*/
 footer {
   background-color: #0052FF;
   color: #ffffff;
@@ -224,12 +218,7 @@ footer {
   text-transform: capitalize;
 }
 
-
-/*============= SOCKET =============*/
-
-
-
-/*============= MEDIA QUERIES =============*/
+/*MEDIA QUERIES*/
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {}
@@ -259,29 +248,26 @@ footer {
 }
 
 /* Devices under 576px (sm) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .carousel-caption {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
 
+  .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
 
-/*============ BOOTSTRAP BREAK POINTS:
+  .carousel-caption h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+}
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
-
-/*-- Bootstrap Mobile Gutter Fix --*/
 .row,
 .container-fluid {
   margin-left: 0px !important;
